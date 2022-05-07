@@ -1,16 +1,13 @@
 import 'package:clivia_base/main.dart';
-import 'package:clivia_user/generated/l10n.dart' as userl10n;
 import 'package:clivia_user/me/lockscreen.dart';
 import 'package:clivia_user/me/main.dart';
 import 'package:clivia_user/user.dart';
 import 'package:flutter/material.dart';
 
-import 'generated/l10n.dart';
-
 void main() async {
-  await init(() => 'http://localhost:8080');
+  await init(['en', 'zh'], ['l10n/base', 'l10n/user', 'l10n'], () => 'http://localhost:8080');
   User.sign();
-  runApp(const Main(title: 'Clivia', home: MainPage(), delegates: [userl10n.S.delegate, S.delegate]));
+  runApp(const Main(title: 'title', home: MainPage()));
 }
 
 class MainPage extends StatefulWidget {
@@ -58,7 +55,7 @@ class _MainPageState extends MainState<MainPage> {
   List<IconData> icons() => [Icons.home_outlined, Icons.copyright, Icons.person_outline];
 
   @override
-  List<String> labels() => [S.of(context).home, 'Clivia', S.of(context).me];
+  List<String> labels() => ['home', 'Clivia', 'me'];
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
