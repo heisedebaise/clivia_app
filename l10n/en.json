@@ -1,5 +1,18 @@
 {
   "title": "Clivia",
   "home": "Home",
-  "me": "Me"
+  "me": {
+    "": "Me",
+    "settings": {
+      "": "Settings",
+      "lock-screen": {
+        "": "Automatically lock screen",
+        "on": "Enable automatic screen lock",
+        "off": "Turn off automatic screen lock",
+        "password": "Lock screen password",
+        "wrong": "Lock screen password wrong",
+        "same": "Same as lock screen password!"
+      }
+    }
+  }
 }

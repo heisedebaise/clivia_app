@@ -1,8 +1,9 @@
 import 'package:clivia_base/main.dart';
-import 'package:clivia_user/me/lockscreen.dart';
-import 'package:clivia_user/me/main.dart';
+import 'package:clivia_user/lockscreen.dart';
 import 'package:clivia_user/user.dart';
 import 'package:flutter/material.dart';
+
+import 'me.dart';
 
 void main() async {
   await init(['en', 'zh'], ['l10n/base', 'l10n/user', 'l10n'], () => 'http://localhost:8080');
