@@ -38,7 +38,6 @@ dependencies:
     path: ../clivia_base
   clivia_user:
     path: ../clivia_user
-  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

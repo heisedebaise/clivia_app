@@ -1,7 +1,6 @@
 #!/bin/bash
 
 dependencies=(
- intl
 )
 
 for i in `seq 0 $[${#dependencies[*]}-1]`; do
