@@ -15,7 +15,7 @@ class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
   @override
-  _MainPageState createState() => _MainPageState();
+  State<StatefulWidget> createState() => _MainPageState();
 }
 
 class _MainPageState extends MainState<MainPage> {
@@ -24,7 +24,7 @@ class _MainPageState extends MainState<MainPage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       ScreenLocker.show(context);
     });
   }
