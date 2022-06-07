@@ -1,7 +1,9 @@
 import 'package:clivia_base/main.dart';
+import 'package:clivia_base/notifier.dart';
 import 'package:clivia_user/lockscreen.dart';
 import 'package:clivia_user/user.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'me.dart';
 
@@ -31,7 +33,7 @@ class _MainPageState extends MainState<MainPage> {
 
   @override
   Widget body() {
-    switch (navigation) {
+    switch (context.watch<Notifier>().navigation) {
       case 1:
         return Center(
           child: Column(
