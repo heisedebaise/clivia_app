@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "clivia_app")
+set(BINARY_NAME "Clivia")
 set(APPLICATION_ID "org.lpw.clivia_app")
 
 cmake_policy(SET CMP0063 NEW)
