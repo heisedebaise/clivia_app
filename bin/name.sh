@@ -11,7 +11,7 @@ sed -i "/CFBundleDisplayName/{n;s/<string>.*<\/string>/<string>$name<\/string>/}
 sed -i "s/set(BINARY_NAME \".*\")/set(BINARY_NAME \"$name\")/g" windows/CMakeLists.txt
 sed -i "s/window.CreateAndShow(L\".*\", origin, size)/window.CreateAndShow(L\"$name\", origin, size)/g" windows/runner/main.cpp
 
-sed -i "s/PRODUCT_BUNDLE_IDENTIFIER = .*;/PRODUCT_BUNDLE_IDENTIFIER = $package;/g" macos/Runner/Configs/AppInfo.xcconfig
+sed -i "s/PRODUCT_BUNDLE_IDENTIFIER = .*$/PRODUCT_BUNDLE_IDENTIFIER = $package/g" macos/Runner/Configs/AppInfo.xcconfig
 sed -i "s/PRODUCT_NAME = .*/PRODUCT_NAME = $name/g" macos/Runner/Configs/AppInfo.xcconfig
 
 sed -i "s/set(APPLICATION_ID \".*\")/set(APPLICATION_ID \"$package\")/g" linux/CMakeLists.txt
