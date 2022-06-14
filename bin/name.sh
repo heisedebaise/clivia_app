@@ -4,7 +4,9 @@ package='org.lpw.clivia'
 name='Clivia'
 
 sed -i "s/applicationId \".*\"/applicationId \"$package\"/g" android/app/build.gradle
+sed -i "s/package=\".*\"/package=\"$package\"/g"  android/app/src/debug/AndroidManifest.xml
 sed -i "s/package=\".*\"/package=\"$package\"/g"  android/app/src/main/AndroidManifest.xml
+sed -i "s/package=\".*\"/package=\"$package\"/g"  android/app/src/profile/AndroidManifest.xml
 sed -i "s/android:label=\".*\"/android:label=\"$name\"/g" android/app/src/main/AndroidManifest.xml
 
 sed -i "s/PRODUCT_BUNDLE_IDENTIFIER = .*;/PRODUCT_BUNDLE_IDENTIFIER = $package;/g" ios/Runner.xcodeproj/project.pbxproj
