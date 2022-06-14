@@ -4,6 +4,8 @@ name='Clivia'
 
 sed -i "s/android:label=\".*\"/android:label=\"$name\"/g" android/app/src/main/AndroidManifest.xml
 
+sed -i "/CFBundleDisplayName/{n;s/<string>.*<\/string>/<string>$name<\/string>/}" ios/Runner/Info.plist
+
 sed -i "s/set(BINARY_NAME \".*\")/set(BINARY_NAME \"$name\")/g" windows/CMakeLists.txt
 sed -i "s/window.CreateAndShow(L\".*\", origin, size)/window.CreateAndShow(L\"$name\", origin, size)/g" windows/runner/main.cpp
 
