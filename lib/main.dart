@@ -5,7 +5,7 @@ import 'package:clivia_user/user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'me.dart';
+import 'me/main.dart';
 
 void main() async {
   await init(['en', 'zh'], ['l10n/base', 'l10n/user', 'l10n'], () => 'http://localhost:8080');
