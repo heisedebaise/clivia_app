@@ -1,11 +1,13 @@
 {
   "unset": "Unset",
+  "modify": "Modify",
   "save": "Save",
   "delete": "Delete",
   "ok": "OK",
   "submit": "Submit",
   "cancel": "Cancel",
   "empty": "Empty",
+  "more": "More",
   "nodata": "No data",
   "http": {
     "error": "HTTP request error"
@@ -52,7 +54,8 @@
   },
   "language": {
     "": "Language",
-    "select": "Select your language"
+    "select": "Select your language",
+    "default": "Default"
   },
   "dark": {
     "": "Dark mode",

@@ -1,11 +1,13 @@
 {
   "unset": "未设置",
+  "modify": "修改",
   "save": "保存",
   "delete": "删除",
   "ok": "确定",
   "submit": "提交",
   "cancel": "取消",
   "empty": "清空",
+  "more": "更多",
   "nodata": "暂无数据",
   "http": {
     "error": "HTTP请求错误"
@@ -52,7 +54,8 @@
   },
   "language": {
     "": "语言",
-    "select": "选择您的语言"
+    "select": "选择您的语言",
+    "default": "默认"
   },
   "dark": {
     "": "深色模式",

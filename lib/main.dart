@@ -25,10 +25,10 @@ class _MainPageState extends MainState<MainPage> {
 
   @override
   void initState() {
-    super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       ScreenLocker.show(context);
     });
+    super.initState();
   }
 
   @override
