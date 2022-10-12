@@ -5,3 +5,7 @@ dataset
 提示：如果您确实要添加它们，使用 -f 参数。
 提示：运行下面的命令来关闭本消息
 提示："git config advice.addIgnoredFile false"
+To git:lpw/clivia_app.git
+   0c9fc11..3aed29c  master -> master
+To github:heisedebaise/clivia_app.git
+   0c9fc11..3aed29c  master -> master
